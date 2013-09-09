@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: autoheaders
+# --
+/***************************************************************
+ * Author : bill.kuo
+ * Purpose : to test autoheader
+ ***************************************************************/
+ #ifndef $1     /* headerfile start */
+ #define $1
+
+ #ifdef __cplusplus
+ extern "c" {
+ #endif
+
+ $0
+
+ #ifdef __cplusplus
+ }
+ #endif
+ #endif         /* headerfile end */
